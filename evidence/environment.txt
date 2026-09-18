@@ -1,0 +1,13 @@
+# LNAV QA #1749
+
+2026-09-18T19:26:43+02:00
+
+lnav 0.14.1
+Linux test-host 6.8.0-139-generic #139-Ubuntu SMP PREEMPT_DYNAMIC Sat Aug  1 03:52:05 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+NAME="Linux Mint"
+VERSION="22.1 (Xia)"
+VERSION_CODENAME=xia
+cmake version 3.28.3
+ctest version 3.28.3
+TERM=xterm-256color
+SHELL=/bin/bash

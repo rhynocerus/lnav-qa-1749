@@ -1,0 +1,4 @@
+18448 unlink("/home/user/Laboratorios/lnav-qa-1749/build/Testing/Temporary/LastTest.log.tmp") = -1 ENOENT (No existe el archivo o el directorio)
+18448 openat(AT_FDCWD, "/home/user/Laboratorios/lnav-qa-1749/build/Testing/Temporary/LastTest.log.tmp", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+18448 rename("/home/user/Laboratorios/lnav-qa-1749/build/Testing/Temporary/LastTest.log.tmp", "/home/user/Laboratorios/lnav-qa-1749/build/Testing/Temporary/LastTest.log") = 0
+18448 unlink("/home/user/Laboratorios/lnav-qa-1749/build/Testing/Temporary/LastTest.log.tmp") = -1 ENOENT (No existe el archivo o el directorio)
