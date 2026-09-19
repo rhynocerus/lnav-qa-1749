@@ -1,0 +1,19 @@
+Result: NOT REPRODUCED in this 30-run test
+
+lnav version: 0.11.2
+
+CTest completed 30/30 runs successfully.
+
+LastTest.log alternated between exactly two inode values:
+
+15 inode=32531751
+15 inode=32531758
+
+After run 30, lnav remained attached to LastTest.log and continued
+displaying the log contents. It did not display:
+
+No log or text files are currently loaded
+
+This single run does not establish that lnav 0.11.2 is unaffected.
+It only records that issue #1749 was not reproduced during this
+30-run test on this host.

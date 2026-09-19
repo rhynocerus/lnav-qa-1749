@@ -1,0 +1,31 @@
+Result: NOT REPRODUCED after 100 CTest runs
+
+lnav version: 0.14.1
+OS: Linux Mint 22.2 Zara
+kernel: 7.0.0-31-generic
+CMake / CTest: 3.28.3
+TERM: xterm-256color
+SHELL: /bin/bash
+filesystem: ext4
+
+lnav 0.14.1 was run using an isolated XDG_CONFIG_HOME.
+
+CTest completed 100/100 runs successfully.
+
+Observed inode counts:
+
+     41 inode=32531634
+      9 inode=32531635
+     50 inode=32531644
+
+After run 100, lnav remained attached to LastTest.log and continued
+displaying the current contents.
+
+The message:
+
+    No log or text files are currently loaded
+
+was NOT observed.
+
+This does not prove the issue cannot occur on this host. It records
+that it was not reproduced during this 100-run test.

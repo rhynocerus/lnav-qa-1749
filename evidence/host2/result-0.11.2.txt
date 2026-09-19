@@ -1,0 +1,31 @@
+Result: NOT REPRODUCED after 100 CTest runs
+
+lnav version: 0.11.2
+OS: Linux Mint 22.2 Zara
+CMake / CTest: 3.28.3
+
+CTest completed 100/100 runs successfully.
+
+Observed inode counts during the 100-run test:
+
+      9 inode=32531517
+     33 inode=32531633
+      8 inode=32531634
+     31 inode=32531635
+      4 inode=32531750
+     10 inode=32531751
+      5 inode=32531757
+
+After run 100, lnav remained attached to LastTest.log and continued
+displaying the current log contents.
+
+The following message was NOT observed:
+
+    No log or text files are currently loaded
+
+A previous 30-run test on the same host showed two inode values,
+15 occurrences each.
+
+This result does not prove that lnav 0.11.2 cannot reproduce the bug.
+It records that the issue was not reproduced during these 100 runs
+on this host.
