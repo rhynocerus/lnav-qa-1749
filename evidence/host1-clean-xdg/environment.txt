@@ -1,0 +1,10 @@
+lnav QA host1 clean-XDG test
+
+2026-09-21T22:26:26+02:00
+lnav 0.14.1
+Linux 6.8.0-139-generic x86_64 GNU/Linux
+NAME="Linux Mint"
+VERSION="22.1 (Xia)"
+VERSION_ID="22.1"
+cmake version 3.28.3
+ctest version 3.28.3

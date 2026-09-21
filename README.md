@@ -75,3 +75,28 @@ successfully reattached specifically to `LastTest.log`.
 
 This repository contains an independent QA reproducer and investigation.
 It is not a fork of lnav and does not contain lnav source code.
+
+## Follow-up comparison
+
+Additional testing was performed across two hosts and with isolated
+XDG configuration state.
+
+Summary:
+
+| Test | lnav | XDG state | Runs | Result |
+|---|---:|---|---:|---|
+| Host 1 original | 0.14.1 | existing/default state | within 30 | REPRODUCED |
+| Host 1 clean XDG | 0.14.1 | isolated clean XDG_CONFIG_HOME | 100 | NOT REPRODUCED |
+| Host 2 | 0.11.2 | default | 100 | NOT REPRODUCED |
+| Host 2 | 0.14.1 | isolated clean XDG_CONFIG_HOME | 100 | NOT REPRODUCED |
+
+The Host 1 clean-XDG run remained attached to LastTest.log for all
+100 CTest executions.
+
+The same lnav version therefore produced different observed outcomes
+between the original Host 1 run and the later clean-XDG run.
+
+This weakens a simple version-only regression hypothesis, but does not
+establish XDG state, timing, or any other factor as the root cause.
+
+See evidence/comparison.md and evidence/host1-clean-xdg/ for details.

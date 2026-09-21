@@ -1,0 +1,12 @@
+Result: NOT REPRODUCED after 100 runs
+
+lnav remained attached to LastTest.log after all 100 CTest runs.
+
+Observed inode distribution:
+50 inode=26107351
+50 inode=26107361
+
+This run used lnav 0.14.1 with a clean XDG_CONFIG_HOME.
+
+This negative result does not prove the issue cannot occur.
+It differs from the earlier test on the same host where the issue was reproduced.
